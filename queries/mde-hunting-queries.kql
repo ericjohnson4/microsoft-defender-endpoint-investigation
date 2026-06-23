@@ -1,0 +1,32 @@
+// PowerShell Activity
+
+DeviceProcessEvents
+| where FileName =~ "powershell.exe"
+| project Timestamp, DeviceName, InitiatingProcessFileName, ProcessCommandLine
+| order by Timestamp desc
+
+// Suspicious Command Lines
+
+DeviceProcessEvents
+| where ProcessCommandLine contains "EncodedCommand"
+| project Timestamp, DeviceName, ProcessCommandLine
+| order by Timestamp desc
+
+// Network Connections
+
+DeviceNetworkEvents
+| project Timestamp, DeviceName, RemoteIP, RemotePort, Protocol
+| order by Timestamp desc
+
+// Process Creation Activity
+
+DeviceProcessEvents
+| project Timestamp, DeviceName, FileName, ProcessCommandLine
+| order by Timestamp desc
+
+// Failed Logon Attempts
+
+DeviceLogonEvents
+| where ActionType == "LogonFailed"
+| project Timestamp, DeviceName, AccountName, FailureReason
+| order by Timestamp desc
