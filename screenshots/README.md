@@ -4,8 +4,8 @@ Contains screenshots captured during the Microsoft Defender for Endpoint investi
 
 ## Figures
 
-- Figure 1 – Incident Queue
-- Figure 2 – Incident Overview
+- Figure 1 – Endpoint Onboarding
+- Figure 2 – Device Timeline Telemetry
 - Figure 3 – Suspicious PowerShell Command Line Alert
-- Figure 4 – Device Timeline Investigation
-- Figure 5 – Advanced Hunting Query Results
+- Figure 4 – Incident Summary
+- Figure 5 – Attack Story Graph
