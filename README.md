@@ -1,5 +1,7 @@
 # Microsoft Defender for Endpoint Detection & Incident Investigation
-
+![Microsoft Defender for Endpoint](https://img.shields.io/badge/Microsoft_Defender_for_Endpoint-EDR-blue)
+![KQL](https://img.shields.io/badge/KQL-Threat_Hunting-green)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
 ## Project Overview
 
 This project demonstrates the use of Microsoft Defender for Endpoint (MDE) to investigate security alerts, analyze endpoint telemetry, perform threat hunting, and document incident response activities.
